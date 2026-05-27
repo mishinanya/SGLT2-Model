@@ -1,0 +1,16 @@
+{
+  "name": "web-template-create",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=@web-template/web",
+    "build": "npm run build --workspace=@web-template/web",
+    "lint": "npm run lint --workspace=@web-template/web"
+  },
+  "engines": {
+    "node": ">=18.18.0"
+  }
+}
